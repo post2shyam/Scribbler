@@ -1,5 +1,6 @@
  // When the user clicks on the signup button, open the modal
  function handleSignUpButtonClick() {
+     console.log("sdfd");
 
      // Get the modal
      var modal = document.getElementById("signUpModal");

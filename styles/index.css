@@ -1,11 +1,30 @@
 .appname {
-    font-family: 'Montez', cursive;
+    font-family: Montez, cursive;
     font-size: 48px;
+    margin: 0px;
 }
 
 .tagline {
-    font-family: 'Ubuntu Mono';
+    font-family: "Ubuntu Mono", monospace;
     font-size: 24px;
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-button-parent {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+}
+
+.blue-btn {
+    background-color: blue;
+    color: white;
+    margin: 10px;
 }
 
 

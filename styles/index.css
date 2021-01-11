@@ -1,4 +1,9 @@
-.header {
+.appname {
     font-family: 'Montez', cursive;
     font-size: 48px;
+}
+
+.tagline {
+    font-family: 'Ubuntu Mono';
+    font-size: 24px;
 }

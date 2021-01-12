@@ -14,15 +14,22 @@
 </head>
 
 <body>
-    <div class="header">
-        <div>
-            <p class="appname">ScriBBler</p>
-            <h2 class="tagline">Explore, Imagine, Create</h2>
-        </div>
+    <div class="fullbody">
+        <div class="header">
+            <div>
+                <p class="appname">ScriBBler</p>
+                <h2 class="tagline">Explore, Imagine, Create</h2>
+            </div>
 
-        <div class="header-button-parent">
-            <button class="blue-btn" onclick="handleSignInButtonClick()">Sign in</button>
-            <button class="blue-btn" onclick="handleSignUpButtonClick()">Sign up</button>
+            <div class="header-button-parent">
+                <button class="blue-btn" onclick="handleSignInButtonClick()">Sign in</button>
+                <button class="blue-btn" onclick="handleSignUpButtonClick()">Sign up</button>
+            </div>
+
+            <div>
+                <button class="yellow-btn" onclick="handleAllPostsButtonClick()">All Posts</button>
+                <button class="yellow-btn" onclick="handleCreatePostButtonClick()">Create Post</button>
+            </div>
         </div>
     </div>
 
@@ -65,6 +72,25 @@
             <input class='autostretch' type="password" placeholder="Enter your password">
             <div>
                 <button class='green-button autostretch'>Signin</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Create post Modal -->
+    <div id="createPostModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span>Pen Your Post</span>
+            <span id="createPostClose" class="close">&times;</span>
+            <hr/>
+            <p>Title</p>
+            <input class='autostretch' type="text" placeholder="Enter title of your post">
+            <p>Contents</p>
+            <input class='autostretch' type="text" placeholder="Enter the contents of your post">
+            <div>
+                <button class='green-button autostretch'>Create</button>
             </div>
         </div>
 

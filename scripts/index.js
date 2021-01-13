@@ -45,7 +45,7 @@
 
 
  function handleAllPostsButtonClick() {
-     alert("navigate to bloglist.html");
+     window.location.href = '../html/bloglist.html';
  }
 
  function handleCreatePostButtonClick() {

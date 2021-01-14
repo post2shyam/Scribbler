@@ -12,6 +12,15 @@ html {
     width: 100%;
 }
 
+input {
+    padding: 12px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
 .appname {
     font-family: Montez, cursive;
     color: blue;
@@ -125,9 +134,9 @@ html {
 .green-button {
     background-color: green;
     color: white;
-}
-
-.autostretch {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 3%;
     width: 100%;
 }
 
@@ -137,4 +146,14 @@ html {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    font-size: 20px;
+    margin: 10px 0px;
 }

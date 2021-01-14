@@ -134,10 +134,11 @@ input {
 .green-button {
     background-color: green;
     color: white;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 3%;
     width: 100%;
+    font-size: 16px;
 }
 
 .post-btn-hdr {
@@ -156,4 +157,15 @@ input {
 .label-text {
     font-size: 20px;
     margin: 10px 0px;
+}
+
+.bottom-banner {
+    text-align: center;
+    font-weight: bold;
+}
+
+.signup-url {
+    color: blue;
+    font-weight: bolder;
+    cursor: pointer;
 }

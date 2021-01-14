@@ -69,3 +69,14 @@
 
      modal.style.display = "block";
  }
+
+ function dismissSigninDialog() {
+     // Get the modal
+     var modal = document.getElementById("signInModal");
+     modal.style.display = "none";
+ }
+
+ function handleSignUpUrlClick() {
+     dismissSigninDialog();
+     handleSignUpButtonClick();
+ }

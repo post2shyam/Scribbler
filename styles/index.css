@@ -94,8 +94,15 @@ html {
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 15%;
+    width: 35%;
     /* Could be more or less, depending on screen size */
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

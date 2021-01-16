@@ -43,3 +43,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.post-content {
+    overflow: hidden;
+    height: 3.6em;
+}

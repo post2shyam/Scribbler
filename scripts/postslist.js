@@ -39,8 +39,9 @@ function showPosts() {
 }
 
 function createPostCardUi(index, author, title, body) {
-    console.log(index + author + title + body);
-    return ' <div class="card-flex">' +
+    var postId = 'postid' + index;
+
+    return ' <div id=' + postId + ' class="card-flex">' +
         '  <div>' +
         '<p class="post-author">' + author + '</p>' +
         ' </div>' +

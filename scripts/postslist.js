@@ -56,16 +56,27 @@ function createPostCardUi(index, author, title, body) {
         '</div>' +
         '<p class="post-content">' + body + '</p>' +
         '<span>' +
-        '<i class="delete-icon fa fa-ellipsis-h"></i>' +
+        '<i onclick="handleEditPostClick(' + postId + ')" class="delete-icon fa fa-ellipsis-h"></i>' +
         '</span>' +
         '</div>' +
         '</div>';
 }
 
-
 // Event - Handlers
-function handleDeleteIconClick(postId) {
+function handleEditPostClick(postId) {
+    //Store the current selected post
+    var mySplits = postId.id.split("_");
+    currSelectedPost = mySplits[1];
+    var postIndex = Number.parseInt(currSelectedPost);
 
+    //Store the current selected post to session store
+    sessionStorage.setItem("currentpost", JSON.stringify(postList[postIndex]));
+
+    //Navigate to edit post screen.
+    window.location.href = '../html/post.html';
+}
+
+function handleDeleteIconClick(postId) {
     //Store the current selected post
     var mySplits = postId.id.split("_");
     currSelectedPost = mySplits[1];

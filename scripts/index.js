@@ -43,9 +43,8 @@
      modal.style.display = "block";
  };
 
-
  function handleAllPostsButtonClick() {
-     window.location.href = '../html/postslist.html';
+     window.location.href = "../html/postslist.html";
  }
 
  function handleCreatePostButtonClick() {

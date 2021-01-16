@@ -27,6 +27,7 @@ body {
     float: right;
     font-size: 24px;
     color: #9C8181;
+    cursor: pointer;
 }
 
 .post-author {

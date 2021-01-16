@@ -12,6 +12,10 @@ body {
     margin: 2%;
 }
 
+.card-flex:hover {
+    box-shadow: 2px 4px grey;
+}
+
 .card-content {
     padding-left: 2%;
     padding-right: 2%;
@@ -47,4 +51,33 @@ body {
 .post-content {
     overflow: hidden;
     height: 3.6em;
+}
+
+.delete-post-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.yes-btn {
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.no-btn {
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.modal-content {
+    width: 20%;
+    margin-top: 15%;
 }

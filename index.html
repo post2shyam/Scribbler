@@ -2,12 +2,126 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <script src="./scripts/index.js"></script>
+
+    <title>ScriBBler</title>
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="fullbody">
+
+        <div class="header">
+            <div>
+                <p class="appname">ScriBBler</p>
+                <h2 class="tagline">Explore, Imagine, Create</h2>
+            </div>
+
+            <div class="header-button-parent">
+                <button class="blue-btn" onclick="handleSignUpButtonClick()">Sign Up</button>
+                <button class="blue-btn" onclick="handleSignInButtonClick()">Sign In</button>
+            </div>
+        </div>
+
+        <div class="post-btn-hdr">
+            <button class="yellow-btn" onclick="handleAllPostsButtonClick()">All Posts</button>
+            <button class="yellow-btn" onclick="handleCreatePostButtonClick()">Create Post</button>
+        </div>
+
+    </div>
+
+
+    <!-- Signup Modal -->
+    <div id="signUpModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2>Get Started</h2>
+                <span id="signUpClose" class="close">&times;</span>
+            </div>
+            <hr/>
+            <form class="input-form">
+                <label for="name" class="label-text">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+
+                <button class='green-button'>Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- SigIn Modal -->
+    <div id="signInModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2>Welcome Back !</h2>
+                <span id="signInClose" class="close">&times;</span>
+            </div>
+            <hr/>
+            <form class="input-form">
+
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+
+                <button class='green-button autostretch'>Sign In</button>
+            </form>
+
+            <p class=bottom-banner>Not a member?
+                <span onclick="handleSignUpUrlClick()" class=signup-url>Sign Up
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Create post Modal -->
+    <div id="createPostModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2>Pen Your Post</h2>
+                <span id="createPostClose" class="close">&times;</span>
+            </div>
+            <hr/>
+            <form class="input-form">
+
+                <label for="posttitle" class="label-text">Username</label>
+                <input type="text" id="posttitle" placeholder="Enter title of your post" required>
+
+
+                <label for="contents" class="label-text">Contents</label>
+                <textarea rows="10" cols="50" id="contents" placeholder="Enter the contents of your post"></textarea>
+
+                <div>
+                    <button class='green-button autostretch'>Create</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

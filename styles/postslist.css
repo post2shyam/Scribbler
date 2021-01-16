@@ -1,4 +1,21 @@
+body {
+    background-color: #FFEEDD;
+}
+
 .card-flex {
     display: flex;
     flex-direction: row;
+}
+
+.card-content {
+    background-color: #E8E8E8;
+}
+
+.post-title {
+    color: #9C8181;
+}
+
+.delete-icon {
+    float: right;
+    font-size: 24px;
 }

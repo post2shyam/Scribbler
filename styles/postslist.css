@@ -8,6 +8,8 @@ body {
     background-color: white;
     align-items: center;
     border-radius: 10px;
+    width: 45%;
+    margin: 2%;
 }
 
 .card-content {
@@ -31,4 +33,11 @@ body {
     font-weight: bold;
     text-align: center;
     color: #707087;
+}
+
+.cards-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

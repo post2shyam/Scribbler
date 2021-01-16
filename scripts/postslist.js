@@ -27,6 +27,8 @@ var postList = [{
 ]
 
 //main - code
+var currSelectedPost = 0;
+
 showPosts();
 
 
@@ -39,7 +41,8 @@ function showPosts() {
 }
 
 function createPostCardUi(index, author, title, body) {
-    var postId = 'postid' + index;
+
+    var postId = 'postid_' + index;
 
     return ' <div id=' + postId + ' class="card-flex">' +
         '  <div>' +
@@ -48,7 +51,7 @@ function createPostCardUi(index, author, title, body) {
 
         '<div class="card-content">' +
         '<div class="post-title">' +
-        '<i class="delete-icon fa fa-trash"></i>' +
+        '<i onclick="handleDeleteIconClick(' + postId + ')" class="delete-icon fa fa-trash"></i>' +
         '<p>' + title + '</p>' +
         '</div>' +
         '<p class="post-content">' + body + '</p>' +
@@ -61,7 +64,12 @@ function createPostCardUi(index, author, title, body) {
 
 
 // Event - Handlers
-function handleDeleteIconClick() {
+function handleDeleteIconClick(postId) {
+
+    //Store the current selected post
+    var mySplits = postId.id.split("_");
+    currSelectedPost = mySplits[1];
+
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
@@ -74,11 +82,24 @@ function handleDeleteIconClick() {
 }
 
 function handleYesDeletePost() {
-    var postList = document.getElementById('posts-list');
-    console.log(postList);
+    //Remove the entry from the posts
+    postList.splice(currSelectedPost, 1);
+
+    //Clear the canwas
+    document.getElementById('posts').innerHTML = "";
+
+    //Dismiss the delete post confirmation modal dialog
+    hideDeletePostDialog();
+
+    //Redraw the page
+    showPosts();
 }
 
 function handleNoDeletePost() {
+    hideDeletePostDialog();
+}
+
+function hideDeletePostDialog() {
     var modal = document.getElementById("delete-post-modal");
     modal.style.display = "none";
 }

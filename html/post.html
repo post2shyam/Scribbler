@@ -13,62 +13,40 @@
 
 <body>
     <!-- TODO: Include code for header here -->
-    <div>
-        <div style="text-align: center;">Post Title</div>
 
-        <div class="author-header">
-            <label>Author</label>
+    <div>
+        <div class="post-title">Everything you should know about ‘module’ & ‘require’ in Node.js</div>
+
+        <div class="author-container">
+            <label class="post-author">Srishti Gupta</label>
             <button>Edit</button>
         </div>
 
-        <div>
-            <label> ksaldkflkdklklkldksflk kasldfkl askdf aksdlfklasd fk asdlfkals f asdflklasdf askdlfklsakdf \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl \n
-                asldkflasdkflas dfkasldkfasdlfksladf laskf laskf  askdlfklas kdfoio sofioas difoisado fioasdi \n
-                foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjak\n
-                sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf \n
-                lksldkflkdflk k ksdlfklsdkflask f  ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl
-            </label>
+        <div class="post-content">
+            ksaldkflkdklklkldksflk kasldfkl askdf aksdlfklasd fk asdlfkals f asdflklasdf askdlfklsakdf asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk
+            jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas
+            dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas
+            dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi
+            sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka
+            klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk
+            asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks
+            dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf
+            laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl
+            kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj
+            jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl
+            sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas
+            dfklaskdflkasldfklsakdfl kasf sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl
+            kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas
+            kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk
+            k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl
+
         </div>
 
         <button>Liked</button>
 
         <div>1 person liked this!</div>
 
-        <textarea placeholder="Leave a comment here"></textarea>
+        <textarea class="new-comment" placeholder="Leave a comment here"></textarea>
         <br>
         <button>Comment</button>
 

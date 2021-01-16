@@ -100,16 +100,24 @@
 
         <!-- Modal content -->
         <div class="modal-content">
-            <span>Pen Your Post</span>
-            <span id="createPostClose" class="close">&times;</span>
-            <hr/>
-            <p>Title</p>
-            <input class='autostretch' type="text" placeholder="Enter title of your post">
-            <p>Contents</p>
-            <input class='autostretch' type="text" placeholder="Enter the contents of your post">
-            <div>
-                <button class='green-button autostretch'>Create</button>
+            <div class="modal-title">
+                <h2>Pen Your Post</h2>
+                <span id="createPostClose" class="close">&times;</span>
             </div>
+            <hr/>
+            <form class="input-form">
+
+                <label for="posttitle" class="label-text">Username</label>
+                <input type="text" id="posttitle" placeholder="Enter title of your post" required>
+
+
+                <label for="contents" class="label-text">Contents</label>
+                <textarea rows="10" cols="50" id="contents" placeholder="Enter the contents of your post"></textarea>
+
+                <div>
+                    <button class='green-button autostretch'>Create</button>
+                </div>
+            </form>
         </div>
 
     </div>

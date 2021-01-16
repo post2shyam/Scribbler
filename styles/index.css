@@ -21,6 +21,14 @@ input {
     font-weight: bold;
 }
 
+textarea {
+    border: none;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px;
+}
+
 .appname {
     font-family: Montez, cursive;
     color: blue;

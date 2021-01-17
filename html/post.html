@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+
+    <link rel="stylesheet" type="text/css" href="../styles/post.css">
+
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+
+    <div>
+        <div id="post-title" class="post-title">Everything you should know about ‘module’ & ‘require’ in Node.js</div>
+
+        <div class="author-container">
+            <label class="post-author">Srishti Gupta</label>
+            <button id="edit-button" class="comment-btn" onclick="handleEditButtonClick()">
+                Edit
+                <i style="font-size: 14px;" class="fa fa-edit" id="edit-save-icon"></i>
+            </button>
+        </div>
+
+        <div id="post-content" class="post-content">
+            ksaldkflkdklklkldksflk kasldfkl askdf aksdlfklasd fk asdlfkals f asdflklasdf askdlfklsakdf asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk
+            jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas
+            dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas
+            dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi
+            sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka
+            dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf
+            laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl
+            kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj
+            jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl
+            sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas
+            dfklaskdflkasldfklsakdfl kasf sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl
+            kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl sd asldkflasdkflas dfkasldkfasdlfksladf laskf laskf askdlfklas
+            kdfoio sofioas difoisado fioasdi sd foasidfo asidofiaosdifasdifoasdfi sdkfjasdkj jsdfksajdk jjsdkjfk jaksdjf ajsdkfjaks dfjsakdfjaksd sdfkk ksdlkflkasl kalsdkflasdlfklk asdfkkaslkdflaskldfklasldfklas dfklaskdflkasldfklsakdfl kasf sd lksldkflkdflk
+            k ksdlfklsdkflask f ksdlfkals kasdlfkal fkaslkfla kflak flaksflka klsdkflaskdfaksl
+
+        </div>
+
+        <button id="like-button" class="comment-btn" onclick="handleLikeButtonClick()">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            Like
+        </button>
+        <br>
+        <br>
+        <div id="like-text" class="like-text">Set the first one to like this</div>
+        <br>
+        <textarea id="new-comment" class="new-comment" placeholder="Leave a comment here"></textarea>
+        <br>
+        <button class="comment-btn" onclick="handleCommentButtonClick()">Comment</button>
+        <br>
+        <p>All Comments</p>
+
+        <div id="comment-container" class="comment-container">
+        </div>
+
+    </div>
+
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>

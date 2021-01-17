@@ -91,9 +91,9 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 3%;
-    width: 100%;
     font-size: 16px;
     cursor: pointer;
+    width: 100%;
 }
 
 .post-btn-hdr {
@@ -123,4 +123,29 @@ textarea {
     color: blue;
     font-weight: bolder;
     cursor: pointer;
+}
+
+.post-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+.green-button-no-stretch {
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
 }

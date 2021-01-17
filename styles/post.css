@@ -11,8 +11,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: inherit;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .post-author {
@@ -26,12 +26,34 @@ body {
 }
 
 .post-content {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .new-comment {
     width: 70%;
     height: 100px;
+}
+
+.comment-btn {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: #ED2553;
+    width: 7%;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+
+.comment-container {
+    background-color: #E2E4E6;
+    padding: 20px;
+    overflow: auto;
+}
+
+.comment-entry {
+    background-color: white;
+    padding: 20px;
 }

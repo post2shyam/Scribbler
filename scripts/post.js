@@ -11,11 +11,14 @@ function handleEditButtonClick() {
     const postBodyField = document.getElementById("post-content");
     const editButton = document.getElementById("edit-button")
 
-    editButton.innerHTML = postTitleField.contentEditable == "false" ? editButtonTemplate : saveButtonTemplate;
-    postTitleField.style.border = postTitleField.contentEditable == "false" ? 'none' : border;
-    postBodyField.style.border = postTitleField.contentEditable == "false" ? 'none' : border;
-    postBodyField.contentEditable = postBodyField.contentEditable == "false" ? "true" : "false";
-    postTitleField.contentEditable = postTitleField.contentEditable == "false" ? "true" : "false";
+    const isNotEditable = postTitleField.contentEditable == "false";
+
+    editButton.innerHTML = isNotEditable ? saveButtonTemplate : editButtonTemplate;
+    postTitleField.style.border = isNotEditable ? border : 'none';
+    postBodyField.style.border = isNotEditable ? border : 'none';
+
+    postBodyField.contentEditable = isNotEditable ? "true" : "false";
+    postTitleField.contentEditable = isNotEditable ? "true" : "false";
 
 }
 

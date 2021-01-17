@@ -1,3 +1,6 @@
+//main - program
+var numOfLikes = 1;
+
 //Event handlers
 function handleEditButtonClick() {
     const saveButtonTemplate = 'Save <i style="font-size: 14px;" class="fa fa-save" id="edit-save-icon"></i>';
@@ -14,4 +17,23 @@ function handleEditButtonClick() {
     postBodyField.contentEditable = postBodyField.contentEditable == "false" ? "true" : "false";
     postTitleField.contentEditable = postTitleField.contentEditable == "false" ? "true" : "false";
 
+}
+
+function handleLikeButtonClick() {
+    const nonZeroLikeButtonTemplate = '<i class="fa fa-thumbs-up" aria-hidden="true"></i> Liked!';
+    const likeButton = document.getElementById("like-button");
+    const likeText = document.getElementById("like-text");
+
+    //Update the like button contents.
+    likeButton.innerHTML = nonZeroLikeButtonTemplate;
+
+    switch (numOfLikes) {
+        case 1:
+            likeText.innerHTML = '1 person likes this!';
+            break;
+        default:
+            likeText.innerHTML = numOfLikes + " people like this!";
+            break;
+    }
+    numOfLikes++;
 }

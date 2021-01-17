@@ -43,8 +43,10 @@ body {
     background-color: #ED2553;
     width: 7%;
     border: none;
-    height: 30px;
     cursor: pointer;
+    outline: none;
+    padding: 0.7%;
+    box-shadow: 0 6px 13px -3px black;
 }
 
 .comment-container {

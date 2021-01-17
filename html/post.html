@@ -51,15 +51,13 @@
         <br>
         <div id="like-text" class="like-text">Set the first one to like this</div>
         <br>
-        <textarea class="new-comment" placeholder="Leave a comment here"></textarea>
+        <textarea id="new-comment" class="new-comment" placeholder="Leave a comment here"></textarea>
         <br>
-        <button class="comment-btn ">Comment</button>
+        <button class="comment-btn" onclick="handleCommentButtonClick()">Comment</button>
         <br>
         <p>All Comments</p>
 
-        <div class="comment-container">
-            <p class="comment-entry">Great post!</p>
-            <p class="comment-entry">Great post! Thanks!</p>
+        <div id="comment-container" class="comment-container">
         </div>
 
     </div>

@@ -37,3 +37,20 @@ function handleLikeButtonClick() {
     }
     numOfLikes++;
 }
+
+function handleCommentButtonClick() {
+    //Get the text from comments text 
+    const currentComment = document.getElementById('new-comment');
+
+    if (currentComment.value !== '') {
+        const commentTemplate = '<p class="comment-entry">' + currentComment.value + '</p>';
+
+        //Append the comment in the UI
+        const commentContainer = document.getElementById('comment-container');
+        const existingComments = commentContainer.innerHTML;
+        commentContainer.innerHTML = commentTemplate + existingComments;
+
+        //Reset the new comments field
+        currentComment.value = "";
+    }
+}

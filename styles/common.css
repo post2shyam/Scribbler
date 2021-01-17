@@ -1,3 +1,36 @@
+input {
+    padding: 12px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.appname {
+    font-family: Montez, cursive;
+    color: blue;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.header-button-parent {
+    margin-right: 15px;
+}
+
+.tagline {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 20px;
+    margin: 0px;
+}
+
+
 /* The Modal (background) */
 
 .modal {
@@ -24,13 +57,23 @@
 
 /* Modal Content/Box */
 
-.modal-content {
+.signup-modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 35%;
+    width: 30%;
+    /* Could be more or less, depending on screen size */
+}
+
+.signin-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
     /* Could be more or less, depending on screen size */
 }
 
@@ -49,4 +92,57 @@
     padding-bottom: 10px;
     padding-left: 20px;
     margin-right: 15px;
+}
+
+.instruction-text {
+    color: grey;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 3%;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.bottom-banner {
+    text-align: center;
+    font-weight: bold;
+}
+
+.signup-url {
+    color: blue;
+    font-weight: bolder;
+    cursor: pointer;
 }

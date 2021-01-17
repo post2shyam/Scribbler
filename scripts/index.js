@@ -1,81 +1,37 @@
- // When the user clicks on the signup button, open the modal
- function handleSignUpButtonClick() {
-     // Get the modal
-     var modal = document.getElementById("signUpModal");
+//Event - handlers
+function handleAllPostsButtonClick() {
+    window.location.href = "../html/postslist.html";
+}
 
-     // Get the <span> element that closes the modal
-     var span = document.getElementById("signUpClose");
+function handleCreatePostButtonClick() {
+    // Get the modal
+    var modal = document.getElementById("createPostModal");
 
-     // When the user clicks on <span> (x), close the modal
-     span.onclick = function() {
-         modal.style.display = "none";
-     };
+    // Get the <span> element that closes the modal
+    var span = document.getElementById("createPostClose");
 
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event) {
-         if (event.target == modal) {
-             modal.style.display = "none";
-         }
-     };
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
 
-     modal.style.display = "block";
- };
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
 
- function handleSignInButtonClick() {
-     // Get the modal
-     var modal = document.getElementById("signInModal");
+    modal.style.display = "block";
+}
 
-     // Get the <span> element that closes the modal
-     var span = document.getElementById("signInClose");
+function dismissSigninDialog() {
+    // Get the modal
+    var modal = document.getElementById("signInModal");
+    modal.style.display = "none";
+}
 
-     // When the user clicks on <span> (x), close the modal
-     span.onclick = function() {
-         modal.style.display = "none";
-     };
-
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event) {
-         if (event.target == modal) {
-             modal.style.display = "none";
-         }
-     };
-
-     modal.style.display = "block";
- };
-
- function handleAllPostsButtonClick() {
-     window.location.href = "../html/postslist.html";
- }
-
- function handleCreatePostButtonClick() {
-     // Get the modal
-     var modal = document.getElementById("createPostModal");
-
-     // Get the <span> element that closes the modal
-     var span = document.getElementById("createPostClose");
-
-     // When the user clicks on <span> (x), close the modal
-     span.onclick = function() {
-         modal.style.display = "none";
-     };
-
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event) {
-         if (event.target == modal) {
-             modal.style.display = "none";
-         }
-     };
-
-     modal.style.display = "block";
- }
-
- function dismissSigninDialog() {
-     // Get the modal
-     var modal = document.getElementById("signInModal");
-     modal.style.display = "none";
- }
-
- function handleSignUpUrlClick() {
-     dismissSigninDialog();
-     handleSignUpButtonClick();
- }
+function handleSignUpUrlClick() {
+    dismissSigninDialog();
+    handleSignUpButtonClick();
+}

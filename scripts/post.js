@@ -43,6 +43,10 @@ function handleCommentButtonClick() {
     const currentComment = document.getElementById('new-comment');
 
     if (currentComment.value !== '') {
+
+        //show the comments container
+        document.getElementById('comment-container').style.display = "block";
+
         const commentTemplate = '<p class="comment-entry">' + currentComment.value + '</p>';
 
         //Append the comment in the UI

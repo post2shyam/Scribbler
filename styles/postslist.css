@@ -1,0 +1,83 @@
+body {
+    background-color: #FFEEDD;
+}
+
+.card-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    width: 45%;
+    margin: 2%;
+}
+
+.card-flex:hover {
+    box-shadow: 2px 4px grey;
+}
+
+.card-content {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #E8E8E8;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.post-title {
+    color: #9C8181;
+}
+
+.delete-icon {
+    float: right;
+    font-size: 24px;
+    color: #9C8181;
+    cursor: pointer;
+}
+
+.post-author {
+    font-weight: bold;
+    text-align: center;
+    color: #707087;
+    padding: 20px;
+}
+
+.cards-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.post-content {
+    overflow: hidden;
+    height: 3.6em;
+}
+
+.delete-post-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.yes-btn {
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.no-btn {
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+}
+
+.modal-content {
+    width: 20%;
+    margin-top: 15%;
+}
